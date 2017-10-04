@@ -1,0 +1,16 @@
+<div class="card-columns">
+  <div class="card" *ngFor="let imagen of imagenes | async">
+    <img class="card-img-top img-fluid" src="{{imagen.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">{{imagen.nombre}}</h4>
+      <p class="card-text"></p>
+    </div>
+  </div>
+ 
+</div>
+
+<pre>
+
+
+<!-- {{ imagenes | async | json}} -->
+</pre>
